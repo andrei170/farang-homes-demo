@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farang Homes · Thailand Property, Walked Through Frame By Frame</title>
+<meta name="description" content="The world's most-watched Thailand property creator team. 300K Instagram. 16M YouTube views. Cinematic walkthroughs, buyer guides, and the eight cities every international buyer should know.">
+<meta name="theme-color" content="#0a1830">
+<meta property="og:title" content="Farang Homes · Thailand Property, Walked Through Frame By Frame">
+<meta property="og:description" content="300K Instagram. 16M YouTube views. The world's most-watched Thailand property creator team.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ocean:#0a1830;
+  --ocean-deep:#050d1c;
+  --ocean-elev:#0f2240;
+  --teal:#00bfa5;
+  --teal-bright:#3ddec5;
+  --gold:#d4af6c;
+  --gold-bright:#ecc88a;
+  --sand:#e6cba0;
+  --cream:#fbf6ec;
+  --text:#fbf6ec;
+  --text-muted:#a8b3c4;
+  --text-dim:#6c7889;
+  --border:rgba(212,175,108,0.2);
+  --border-bright:rgba(212,175,108,0.5);
+  --teal-soft:rgba(0,191,165,0.08);
+  --gold-soft:rgba(212,175,108,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--ocean-deep);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;top:0;left:0;right:0;padding:14px 0;background:rgba(5,13,28,0.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,0.06);z-index:100}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;align-items:center;gap:28px}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:0.08em;color:var(--cream)}
+.logo .gold{color:var(--gold)}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:13px;font-weight:500;letter-spacing:0.06em;color:var(--text-muted);text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-bright)}
+.nav-cta{padding:10px 22px;background:var(--gold);color:var(--ocean-deep);border-radius:2px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;transition:all 0.25s}
+.nav-cta:hover{background:var(--gold-bright);transform:translateY(-1px)}
+@media(max-width:880px){.nav-links a:not(.nav-cta){display:none}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=2400&q=80');background-size:cover;background-position:center;animation:kenburns 28s ease-in-out infinite alternate}
+@keyframes kenburns{0%{transform:scale(1.0) translate(0,0)}100%{transform:scale(1.1) translate(-2%,-2%)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(5,13,28,0.85) 0%,rgba(5,13,28,0.55) 45%,rgba(10,24,48,0.35) 100%)}
+.hero-overlay::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 30% 70%,rgba(0,191,165,0.18),transparent 60%)}
+.hero-inner{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:140px 28px 80px;width:100%}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:14px;padding:10px 18px;border:1px solid var(--border-bright);border-radius:100px;background:rgba(212,175,108,0.04);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:36px}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--teal-bright);box-shadow:0 0 8px var(--teal-bright);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,9vw,128px);line-height:0.92;letter-spacing:-0.005em;color:var(--cream);margin-bottom:28px;max-width:14ch}
+.hero h1 em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;color:var(--gold-bright);letter-spacing:-0.01em}
+.hero-sub{font-size:clamp(17px,1.7vw,21px);color:var(--text-muted);max-width:62ch;margin-bottom:48px;line-height:1.55}
+.hero-sub strong{color:var(--cream);font-weight:500}
+.hero-cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.cta-primary{display:inline-block;padding:18px 36px;background:var(--gold);color:var(--ocean-deep);border-radius:2px;font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;transition:all 0.25s;box-shadow:0 14px 36px rgba(212,175,108,0.22)}
+.cta-primary:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 18px 44px rgba(212,175,108,0.32)}
+.cta-ghost{display:inline-flex;align-items:center;gap:12px;padding:18px 28px;border:1px solid var(--border-bright);color:var(--cream);border-radius:2px;font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.25s}
+.cta-ghost:hover{background:var(--gold-soft);border-color:var(--gold-bright)}
+.cta-ghost .play{width:24px;height:24px;border-radius:50%;background:var(--teal);display:inline-flex;align-items:center;justify-content:center;color:var(--ocean-deep)}
+.cta-ghost .play::after{content:'';width:0;height:0;border-left:6px solid var(--ocean-deep);border-top:4px solid transparent;border-bottom:4px solid transparent;margin-left:2px}
+
+/* hero meta column */
+.hero-meta{position:absolute;bottom:60px;right:28px;z-index:2;text-align:right;max-width:280px}
+.hero-meta-label{font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.hero-meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;font-size:11px;color:var(--text-muted);text-align:left}
+.hero-meta-grid dt{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--cream);letter-spacing:0.04em;line-height:1}
+.hero-meta-grid dd{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-dim);margin-top:4px}
+@media(max-width:1080px){.hero-meta{display:none}}
+
+/* ---------- SECTION DEFAULTS ---------- */
+section{padding:120px 0;position:relative}
+.container{max-width:1280px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+.container-narrow{max-width:920px;margin:0 auto;padding:0 28px}
+.section-eyebrow{font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:inline-flex;align-items:center;gap:14px}
+.section-eyebrow::before{content:'';width:32px;height:1px;background:var(--gold)}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5.5vw,72px);line-height:0.98;letter-spacing:-0.005em;color:var(--cream);margin-bottom:24px;max-width:18ch}
+.section-title em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-bright);font-weight:500}
+.section-sub{font-size:17px;color:var(--text-muted);max-width:62ch;line-height:1.65;margin-bottom:48px}
+.section-sub strong{color:var(--cream);font-weight:500}
+
+/* ---------- 01 — THE GROUP / STAT BAND ---------- */
+.group-band{background:linear-gradient(180deg,var(--ocean) 0%,var(--ocean-deep) 100%);padding:90px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.group-header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:28px;margin-bottom:48px}
+.group-header h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4.5vw,56px);line-height:1;color:var(--cream);max-width:20ch}
+.group-header h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-bright);font-weight:500}
+.group-header p{font-size:13px;color:var(--text-muted);max-width:32ch;text-align:right}
+.stat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:1px solid var(--border)}
+.stat-tile{padding:36px 24px;text-align:center;border-right:1px solid var(--border);background:rgba(15,34,64,0.4)}
+.stat-tile:last-child{border-right:0}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,4.5vw,60px);color:var(--gold);line-height:1;letter-spacing:0.02em}
+.stat-num .small{font-size:0.55em;color:var(--gold-bright);vertical-align:top;margin-left:2px}
+.stat-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-top:14px;line-height:1.4}
+.group-source{margin-top:24px;font-size:11px;color:var(--text-dim);text-align:center;letter-spacing:0.04em}
+@media(max-width:980px){.stat-grid{grid-template-columns:repeat(3,1fr)}.stat-tile:nth-child(3){border-right:0}.stat-tile:nth-child(1),.stat-tile:nth-child(2),.stat-tile:nth-child(3){border-bottom:1px solid var(--border)}}
+@media(max-width:580px){.stat-grid{grid-template-columns:repeat(2,1fr)}.stat-tile{border-right:1px solid var(--border) !important;border-bottom:1px solid var(--border)}.stat-tile:nth-child(2n){border-right:0 !important}}
+
+/* ---------- 02 — WHO IT'S FOR ---------- */
+.who{background:var(--ocean-deep)}
+.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.who-card{padding:42px 32px;background:rgba(15,34,64,0.5);border:1px solid var(--border);border-radius:3px;backdrop-filter:blur(8px);transition:all 0.3s}
+.who-card:hover{border-color:var(--border-bright);transform:translateY(-4px)}
+.who-num{font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--gold);line-height:1;display:block;margin-bottom:14px}
+.who-card h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--cream);margin-bottom:18px;font-weight:500;font-style:italic}
+.who-card p{font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:24px}
+.who-card ul{list-style:none;padding:0}
+.who-card li{font-size:13px;color:var(--text-muted);padding:8px 0;border-top:1px dashed rgba(212,175,108,0.18);display:flex;align-items:flex-start;gap:10px}
+.who-card li::before{content:'';width:5px;height:5px;background:var(--teal);border-radius:50%;margin-top:8px;flex-shrink:0}
+@media(max-width:880px){.who-grid{grid-template-columns:1fr}}
+
+/* ---------- 03 — WALKTHROUGH SERIES ---------- */
+.walkthroughs{background:linear-gradient(180deg,var(--ocean-deep) 0%,var(--ocean) 100%);position:relative;overflow:hidden}
+.walkthroughs::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(0,191,165,0.06),transparent 50%);pointer-events:none}
+.tour-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.tour-card{position:relative;border-radius:3px;overflow:hidden;cursor:pointer;background:var(--ocean-elev);border:1px solid var(--border);aspect-ratio:4/5;transition:all 0.4s}
+.tour-card:hover{transform:translateY(-6px);border-color:var(--border-bright);box-shadow:0 24px 60px rgba(0,191,165,0.15)}
+.tour-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 0.6s}
+.tour-card:hover .tour-img{transform:scale(1.06)}
+.tour-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,13,28,0.0) 30%,rgba(5,13,28,0.92) 100%)}
+.tour-meta{position:absolute;left:24px;right:24px;bottom:24px;color:var(--cream);z-index:2}
+.tour-tag{display:inline-block;padding:5px 11px;background:var(--gold);color:var(--ocean-deep);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;border-radius:2px;margin-bottom:14px}
+.tour-card h3{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:22px;line-height:1.2;color:var(--cream);margin-bottom:8px}
+.tour-stats{display:flex;gap:20px;font-size:11px;color:var(--text-muted);letter-spacing:0.06em}
+.tour-stats span{display:inline-flex;align-items:center;gap:6px}
+.tour-stats span::before{content:'';width:4px;height:4px;background:var(--teal);border-radius:50%}
+.play-overlay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(212,175,108,0.92);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s;z-index:3}
+.tour-card:hover .play-overlay{opacity:1}
+.play-overlay::after{content:'';width:0;height:0;border-left:14px solid var(--ocean-deep);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+@media(max-width:980px){.tour-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.tour-grid{grid-template-columns:1fr}}
+
+/* ---------- 04 — BUYING GUIDE LEAD MAGNET ---------- */
+.guide{background:var(--ocean);position:relative;overflow:hidden}
+.guide::before{content:'';position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=2000&q=70');background-size:cover;background-position:center;opacity:0.12;filter:saturate(1.1)}
+.guide-inner{position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:80px;align-items:center}
+.guide-text h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5.5vw,76px);line-height:0.98;color:var(--cream);margin-bottom:28px}
+.guide-text h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-bright);font-weight:500}
+.guide-text p{font-size:17px;color:var(--text-muted);max-width:54ch;line-height:1.7;margin-bottom:24px}
+.guide-text p strong{color:var(--cream);font-weight:500}
+.guide-features{margin:32px 0 40px;list-style:none}
+.guide-features li{padding:12px 0;border-top:1px solid var(--border);font-size:14px;color:var(--text-muted);display:flex;align-items:center;gap:14px}
+.guide-features li::before{content:'';width:24px;height:24px;background:var(--teal);border-radius:50%;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;position:relative}
+.guide-features li::after{content:'';position:absolute;width:7px;height:11px;border-right:2px solid var(--ocean-deep);border-bottom:2px solid var(--ocean-deep);transform:translate(-19px,-2px) rotate(45deg)}
+.guide-form{display:flex;gap:10px;max-width:480px;flex-wrap:wrap}
+.guide-form input{flex:1;min-width:200px;padding:18px 22px;background:rgba(15,34,64,0.7);border:1px solid var(--border-bright);color:var(--cream);font-size:14px;font-family:inherit;border-radius:2px}
+.guide-form input::placeholder{color:var(--text-dim)}
+.guide-form input:focus{outline:none;border-color:var(--teal-bright)}
+.guide-disclaimer{font-size:11px;color:var(--text-dim);margin-top:14px;letter-spacing:0.04em}
+.guide-visual{position:relative}
+.guide-cover{aspect-ratio:3/4;background:linear-gradient(145deg,var(--ocean-elev) 0%,var(--ocean) 100%);border:1px solid var(--border-bright);border-radius:4px;padding:48px 36px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 40px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(212,175,108,0.1) inset;transform:rotate(-3deg);transition:transform 0.4s}
+.guide-cover:hover{transform:rotate(0deg) scale(1.02)}
+.guide-cover-tag{font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.guide-cover-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:42px;line-height:1.05;color:var(--cream);font-weight:500}
+.guide-cover-title em{color:var(--gold-bright)}
+.guide-cover-meta{font-size:11px;color:var(--text-muted);letter-spacing:0.12em;text-transform:uppercase;border-top:1px solid var(--border);padding-top:18px}
+@media(max-width:980px){.guide-inner{grid-template-columns:1fr;gap:48px}.guide-cover{max-width:340px;margin:0 auto;transform:rotate(0deg)}}
+
+/* ---------- 05 — CITIES MAP ---------- */
+.cities{background:var(--ocean-deep)}
+.city-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.city-card{position:relative;aspect-ratio:3/4;border-radius:3px;overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:all 0.4s}
+.city-card:hover{transform:translateY(-6px);border-color:var(--border-bright)}
+.city-img{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.05);transition:transform 0.6s}
+.city-card:hover .city-img{transform:scale(1.08)}
+.city-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,13,28,0.1) 40%,rgba(5,13,28,0.95) 100%)}
+.city-meta{position:absolute;left:20px;right:20px;bottom:20px;color:var(--cream);z-index:2}
+.city-meta h3{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.04em;color:var(--cream);margin-bottom:6px;line-height:1}
+.city-meta p{font-size:11px;color:var(--text-muted);letter-spacing:0.06em}
+.city-meta .city-stat{display:inline-block;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-bright);font-size:14px;margin-top:8px}
+@media(max-width:980px){.city-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.city-grid{grid-template-columns:1fr 1fr}}
+
+/* ---------- 06 — HOW WE WORK (FOR OWNERS) ---------- */
+.how{background:linear-gradient(180deg,var(--ocean-deep) 0%,var(--ocean) 100%)}
+.how-header{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-end;margin-bottom:64px}
+@media(max-width:880px){.how-header{grid-template-columns:1fr;gap:24px}}
+.how-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.how-step{padding:48px 36px;border-right:1px solid var(--border);position:relative}
+.how-step:last-child{border-right:0}
+.how-step-num{font-family:'Bebas Neue',sans-serif;font-size:60px;color:var(--gold);line-height:1;letter-spacing:-0.02em;margin-bottom:18px;display:block}
+.how-step h3{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--cream);margin-bottom:14px;font-weight:500}
+.how-step p{font-size:14px;color:var(--text-muted);line-height:1.7}
+.how-step .ship{margin-top:22px;padding-top:18px;border-top:1px dashed var(--border-bright);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-bright)}
+@media(max-width:880px){.how-steps{grid-template-columns:1fr}.how-step{border-right:0;border-bottom:1px solid var(--border)}.how-step:last-child{border-bottom:0}}
+
+/* ---------- 07 — FOUNDER / ABOUT ---------- */
+.founder{background:var(--ocean);position:relative;overflow:hidden}
+.founder::after{content:'';position:absolute;top:0;right:-200px;width:760px;height:760px;background:radial-gradient(circle,rgba(0,191,165,0.07),transparent 60%);pointer-events:none}
+.founder-inner{display:grid;grid-template-columns:0.9fr 1.1fr;gap:80px;align-items:center;position:relative;z-index:1}
+@media(max-width:980px){.founder-inner{grid-template-columns:1fr;gap:48px}}
+.founder-photo{aspect-ratio:4/5;background-image:url('https://images.unsplash.com/photo-1545153996-5d2c0f9b8b56?w=1400&q=80');background-size:cover;background-position:center;border-radius:3px;border:1px solid var(--border-bright);position:relative;overflow:hidden}
+.founder-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(5,13,28,0.5));border-radius:3px}
+.founder-quote{position:absolute;bottom:32px;left:32px;right:32px;color:var(--cream);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;line-height:1.4;z-index:2}
+.founder-text h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,68px);line-height:0.98;color:var(--cream);margin-bottom:24px}
+.founder-text h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-bright);font-weight:500}
+.founder-text p{font-size:16px;color:var(--text-muted);line-height:1.75;margin-bottom:18px}
+.founder-text p strong{color:var(--cream);font-weight:500}
+.founder-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:32px;border-top:1px solid var(--border);padding-top:28px}
+.founder-stats div{padding:0 14px;border-right:1px solid var(--border)}
+.founder-stats div:last-child{border-right:0;padding-right:0}
+.founder-stats div:first-child{padding-left:0}
+.founder-stat-num{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--gold);line-height:1}
+.founder-stat-label{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);margin-top:8px}
+
+/* ---------- 08 — FINAL CTA ---------- */
+.final-cta{background:var(--ocean-deep);position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1528181304800-259b08848526?w=2000&q=70');background-size:cover;background-position:center;opacity:0.18;filter:saturate(1.1)}
+.final-cta::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,13,28,0.92) 0%,rgba(5,13,28,0.7) 60%,rgba(5,13,28,0.95) 100%)}
+.final-cta-inner{position:relative;z-index:1;text-align:center;max-width:760px;margin:0 auto}
+.final-cta h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,96px);line-height:0.95;color:var(--cream);margin-bottom:28px;letter-spacing:-0.005em}
+.final-cta h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-bright);font-weight:500}
+.final-cta p{font-size:17px;color:var(--text-muted);max-width:54ch;margin:0 auto 40px;line-height:1.65}
+.final-cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--ocean-deep);border-top:1px solid var(--border);padding:60px 0 40px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+@media(max-width:880px){.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.footer-inner{grid-template-columns:1fr}}
+.footer-brand p{font-size:13px;color:var(--text-muted);line-height:1.7;margin-top:18px;max-width:32ch}
+.footer-col h4{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:0.18em;color:var(--gold);margin-bottom:18px;text-transform:uppercase}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{font-size:13px;color:var(--text-muted);transition:color 0.2s}
+.footer-col a:hover{color:var(--gold-bright)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:11px;color:var(--text-dim);letter-spacing:0.04em}
+.footer-bottom .social{display:flex;gap:14px}
+.footer-bottom .social a{padding:7px 14px;border:1px solid var(--border);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);transition:all 0.2s}
+.footer-bottom .social a:hover{border-color:var(--gold);color:var(--gold-bright)}
+
+/* ---------- DEMO BANNER ---------- */
+.demo-strip{position:fixed;bottom:14px;left:14px;right:14px;background:rgba(0,191,165,0.94);color:var(--ocean-deep);padding:10px 18px;border-radius:3px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;z-index:200;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;box-shadow:0 8px 24px rgba(0,0,0,0.25)}
+.demo-strip a{text-decoration:underline}
+.demo-strip button{background:var(--ocean-deep);color:var(--teal-bright);border:0;padding:6px 12px;font-size:10px;letter-spacing:0.1em;cursor:pointer;border-radius:2px}
+
+</style>
+</head>
+<body>
+
+<!-- ===== DEMO BANNER ===== -->
+<div class="demo-strip" id="demo-strip">
+  <span>Sample build by AG1 Consulting · Faranghomes brand assets, photography, and offer slot in on Day 1.</span>
+  <button onclick="document.getElementById('demo-strip').remove()">Hide</button>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="logo">FARANG<span class="gold">·</span>HOMES</a>
+    <div class="nav-links">
+      <a href="#walkthroughs">Walk-Throughs</a>
+      <a href="#cities">Cities</a>
+      <a href="#guide">Buying Guide</a>
+      <a href="#how">For Owners</a>
+      <a href="#guide" class="nav-cta">Get The Guide</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="dot"></span>Now filming · Phuket · Koh Samui · Hua Hin</div>
+    <h1>Thailand property,<br><em>walked through</em> frame by frame.</h1>
+    <p class="hero-sub">The world's most-watched Thailand property creator team. Cinematic walkthroughs, drone tours, neighbourhood reads, and a step-by-step guide to buying as a foreigner — built for the <strong>550,000 followers</strong> who plan to live, invest, or retire here next.</p>
+    <div class="hero-cta-row">
+      <a href="#guide" class="cta-primary">Get the buying guide</a>
+      <a href="#walkthroughs" class="cta-ghost"><span class="play"></span>Watch a walk-through</a>
+    </div>
+  </div>
+  <aside class="hero-meta" aria-label="Group at a glance">
+    <div class="hero-meta-label">At a glance</div>
+    <dl class="hero-meta-grid">
+      <div><dt>300K</dt><dd>Instagram</dd></div>
+      <div><dt>16M</dt><dd>YouTube views</dd></div>
+      <div><dt>550K</dt><dd>Total reach</dd></div>
+      <div><dt>2023</dt><dd>Founded</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<!-- ===== 01 — STAT BAND / THE GROUP ===== -->
+<section class="group-band" id="group">
+  <div class="container">
+    <div class="group-header">
+      <h2>The most-watched <em>Thailand property</em> creator team online.</h2>
+      <p>300K Instagram. 16M YouTube views. 550K+ across platforms. Filming weekly across eight Thai cities since 2023.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-tile"><div class="stat-num">300K<span class="small">+</span></div><div class="stat-label">Instagram</div></div>
+      <div class="stat-tile"><div class="stat-num">16M<span class="small">+</span></div><div class="stat-label">YouTube views</div></div>
+      <div class="stat-tile"><div class="stat-num">550K<span class="small">+</span></div><div class="stat-label">Cross-platform</div></div>
+      <div class="stat-tile"><div class="stat-num">1,000<span class="small">+</span></div><div class="stat-label">Properties walked</div></div>
+      <div class="stat-tile"><div class="stat-num">8</div><div class="stat-label">Cities covered</div></div>
+      <div class="stat-tile"><div class="stat-num">30</div><div class="stat-label">Pages: buyer guide</div></div>
+    </div>
+    <div class="group-source">Audience figures self-reported 2026-05. Properties-walked figure based on YouTube upload count. Not a real estate agency · we do not handle sales or set property prices.</div>
+  </div>
+</section>
+
+<!-- ===== 02 — WHO IT'S FOR ===== -->
+<section class="who" id="who">
+  <div class="container">
+    <div class="section-eyebrow">02 — Who it's for</div>
+    <h2 class="section-title">Three audiences. <em>One brand</em> they actually trust.</h2>
+    <p class="section-sub">Most Thailand property sites talk to nobody specifically. We talk to three groups — and we publish accordingly. The first builds the audience; the second pays the bills; the third tells us what to film next.</p>
+    <div class="who-grid">
+      <div class="who-card">
+        <span class="who-num">01</span>
+        <h3>International Buyers</h3>
+        <p>The 87% of our viewership planning a move to Thailand inside 36 months. Browsing from London, Berlin, Sydney, Singapore. They want to see the inside of the unit, the neighbourhood at 7am, the commute to the beach, the legal setup explained without the jargon.</p>
+        <ul>
+          <li>Buying guide eBook (lead magnet)</li>
+          <li>City-by-city walk-through library</li>
+          <li>Neighbourhood reads + commute footage</li>
+          <li>Foreigner-ownership FAQ + Thai law primer</li>
+        </ul>
+      </div>
+      <div class="who-card">
+        <span class="who-num">02</span>
+        <h3>Property Owners + Developers</h3>
+        <p>Pre-construction developers, individual sellers, agencies wanting their inventory in front of 550K engaged viewers. The unit fee covers cinematic capture; the upside is the audience pull. We're the only Thailand property channel with HD walkthroughs at this scale.</p>
+        <ul>
+          <li>Cinematic full property walkthrough</li>
+          <li>Drone exterior + neighbourhood context</li>
+          <li>Distribution: IG, YouTube, TikTok, Threads</li>
+          <li>Cut-down ad creatives for paid traffic</li>
+        </ul>
+      </div>
+      <div class="who-card">
+        <span class="who-num">03</span>
+        <h3>Investors + Long-Stay Renters</h3>
+        <p>Repeat visitors moving into 6-month + leases, retirees on long-stay visas, remote-work-ready investors looking at yield. They want the specifics: HOA fees, rental yields by neighbourhood, off-plan vs. resale tradeoffs, what foreigner ownership actually costs over five years.</p>
+        <ul>
+          <li>Yield-by-city benchmark library</li>
+          <li>Off-plan vs. resale walkthroughs</li>
+          <li>Long-stay visa + tax notes</li>
+          <li>Quarterly market read drops</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 — WALKTHROUGH SERIES ===== -->
+<section class="walkthroughs" id="walkthroughs">
+  <div class="container">
+    <div class="section-eyebrow">03 — The Walk-Through Series</div>
+    <h2 class="section-title">Six recent tours. <em>1,000+</em> in the library.</h2>
+    <p class="section-sub">Every walk-through is an HD interior tour, drone exterior, neighbourhood context, and a buyer-side honest read on what works and what to watch out for. Filmed across eight Thai cities. Free on YouTube; the catalog is all here.</p>
+    <div class="tour-grid">
+      <article class="tour-card">
+        <div class="tour-img" style="background-image:url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1200&q=80')"></div>
+        <div class="tour-overlay"></div>
+        <div class="play-overlay"></div>
+        <div class="tour-meta">
+          <span class="tour-tag">Beachfront · Phuket</span>
+          <h3>3-Bed Pool Villa, Surin Beach</h3>
+          <div class="tour-stats"><span>14 min walk</span><span>Sample listing</span></div>
+        </div>
+      </article>
+      <article class="tour-card">
+        <div class="tour-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80')"></div>
+        <div class="tour-overlay"></div>
+        <div class="play-overlay"></div>
+        <div class="tour-meta">
+          <span class="tour-tag">Sky-rise · Bangkok</span>
+          <h3>1-Bed Sukhumvit Sky-Condo, Floor 38</h3>
+          <div class="tour-stats"><span>11 min walk</span><span>Sample listing</span></div>
+        </div>
+      </article>
+      <article class="tour-card">
+        <div class="tour-img" style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80')"></div>
+        <div class="tour-overlay"></div>
+        <div class="play-overlay"></div>
+        <div class="tour-meta">
+          <span class="tour-tag">Hillside · Koh Samui</span>
+          <h3>Sea-View Hillside Retreat, Chaweng Noi</h3>
+          <div class="tour-stats"><span>16 min walk</span><span>Sample listing</span></div>
+        </div>
+      </article>
+      <article class="tour-card">
+        <div class="tour-img" style="background-image:url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1200&q=80')"></div>
+        <div class="tour-overlay"></div>
+        <div class="play-overlay"></div>
+        <div class="tour-meta">
+          <span class="tour-tag">Off-plan · Hua Hin</span>
+          <h3>Pre-Construction Beachfront, North Hua Hin</h3>
+          <div class="tour-stats"><span>13 min walk</span><span>Sample listing</span></div>
+        </div>
+      </article>
+      <article class="tour-card">
+        <div class="tour-img" style="background-image:url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80')"></div>
+        <div class="tour-overlay"></div>
+        <div class="play-overlay"></div>
+        <div class="tour-meta">
+          <span class="tour-tag">Modern · Chiang Mai</span>
+          <h3>Lanna-Style Modern House, Hang Dong</h3>
+          <div class="tour-stats"><span>12 min walk</span><span>Sample listing</span></div>
+        </div>
+      </article>
+      <article class="tour-card">
+        <div class="tour-img" style="background-image:url('https://images.unsplash.com/photo-1594563703937-fdc640497dcd?w=1200&q=80')"></div>
+        <div class="tour-overlay"></div>
+        <div class="play-overlay"></div>
+        <div class="tour-meta">
+          <span class="tour-tag">Resort · Pattaya</span>
+          <h3>Branded-Residence 2-Bed, Pratumnak Hill</h3>
+          <div class="tour-stats"><span>15 min walk</span><span>Sample listing</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 — BUYING GUIDE LEAD MAGNET ===== -->
+<section class="guide" id="guide">
+  <div class="container">
+    <div class="guide-inner">
+      <div class="guide-text">
+        <div class="section-eyebrow">04 — The Buying Guide</div>
+        <h2>The 30-page playbook every <em>foreign buyer</em> wishes they read first.</h2>
+        <p>Foreigner ownership rules. Thai company structures. Off-plan deposits and what they really mean. Tax. Visa-vs-purchase order of operations. Currency, finance, escrow, and the eight cities ranked by yield, lifestyle, and exit liquidity.</p>
+        <p><strong>One read. One PDF. The chapter most buyers skip costs them six figures.</strong></p>
+        <ul class="guide-features">
+          <li>Foreigner ownership rules &middot; freehold vs. leasehold &middot; condo quota explained</li>
+          <li>Eight cities ranked by yield &middot; lifestyle &middot; foreign-buyer liquidity</li>
+          <li>Off-plan deposit structure + how to vet a developer</li>
+          <li>Tax + finance + currency setup &middot; before you sign anything</li>
+        </ul>
+        <form class="guide-form" onsubmit="event.preventDefault();alert('Demo only. The deployed version captures email and delivers the PDF.');">
+          <input type="email" placeholder="Your best email" required>
+          <button type="submit" class="cta-primary">Send me the guide</button>
+        </form>
+        <p class="guide-disclaimer">Free PDF. Single-tap unsubscribe. We email roughly twice a month with the latest walk-throughs.</p>
+      </div>
+      <div class="guide-visual">
+        <div class="guide-cover">
+          <div>
+            <div class="guide-cover-tag">Farang Homes &middot; eBook</div>
+            <p style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-dim);margin-top:14px">Edition 2026 &middot; 30 pages</p>
+          </div>
+          <h3 class="guide-cover-title">How to Buy <em>Property</em> in Thailand</h3>
+          <div class="guide-cover-meta">A step-by-step guide for foreign buyers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 — CITIES ===== -->
+<section class="cities" id="cities">
+  <div class="container">
+    <div class="section-eyebrow">05 — The Eight Cities</div>
+    <h2 class="section-title">Eight Thai cities. <em>One library</em>, properly indexed.</h2>
+    <p class="section-sub">Each city has its own walk-through archive, neighbourhood breakdowns, yield-by-zone notes, and a foreign-buyer scorecard. Pick yours; we'll send you the next walk-through from there.</p>
+    <div class="city-grid">
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Phuket</h3>
+          <p>Beachfront &middot; Andaman</p>
+          <div class="city-stat">142 walk-throughs</div>
+        </div>
+      </article>
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Bangkok</h3>
+          <p>Sky-rise &middot; Sukhumvit</p>
+          <div class="city-stat">218 walk-throughs</div>
+        </div>
+      </article>
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Koh Samui</h3>
+          <p>Hillside &middot; Gulf</p>
+          <div class="city-stat">96 walk-throughs</div>
+        </div>
+      </article>
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Hua Hin</h3>
+          <p>Royal &middot; Long-stay</p>
+          <div class="city-stat">81 walk-throughs</div>
+        </div>
+      </article>
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1598935898639-81586f7d2129?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Pattaya</h3>
+          <p>Resort &middot; Eastern</p>
+          <div class="city-stat">119 walk-throughs</div>
+        </div>
+      </article>
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1599982478345-9c5b3a0b5b1a?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Chiang Mai</h3>
+          <p>Lanna &middot; North</p>
+          <div class="city-stat">74 walk-throughs</div>
+        </div>
+      </article>
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Krabi</h3>
+          <p>Beachfront &middot; Andaman</p>
+          <div class="city-stat">52 walk-throughs</div>
+        </div>
+      </article>
+      <article class="city-card">
+        <div class="city-img" style="background-image:url('https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=1000&q=80')"></div>
+        <div class="city-overlay"></div>
+        <div class="city-meta">
+          <h3>Koh Phangan</h3>
+          <p>Boutique &middot; Off-grid</p>
+          <div class="city-stat">38 walk-throughs</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 — HOW WE WORK / FOR OWNERS ===== -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="how-header">
+      <div>
+        <div class="section-eyebrow">06 — Feature Your Property</div>
+        <h2 class="section-title">Three steps. <em>Less than 14 days</em> from booking to live.</h2>
+      </div>
+      <p class="section-sub">For owners + developers ready to put their inventory in front of 550K engaged viewers. The capture fee covers cinematic + drone production. The audience does the rest.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <span class="how-step-num">01</span>
+        <h3>Brief + Capture Day</h3>
+        <p>You send the address, the access window, and a one-page brief on what makes the property different. We arrive with a two-person creator team — interior, drone, neighbourhood B-roll. Single capture day for most units; two for villas + estates.</p>
+        <div class="ship">Capture day &middot; on-site one day</div>
+      </div>
+      <div class="how-step">
+        <span class="how-step-num">02</span>
+        <h3>Cinematic Cut + Approval</h3>
+        <p>You get the long-form walk-through (8-16 min), an Instagram Reel cut, three vertical TikToks, and a YouTube Shorts pack. Two rounds of feedback included. We mix the music, colour-grade the footage, and write the buyer-side voiceover.</p>
+        <div class="ship">Edit + delivery &middot; 7 working days</div>
+      </div>
+      <div class="how-step">
+        <span class="how-step-num">03</span>
+        <h3>Distribution + Buyer Inflow</h3>
+        <p>Your property goes live across YouTube (550K+), Instagram (300K+), TikTok, Threads, Facebook, and our buyer email list. Buyer enquiries route directly to you. We never represent buyers, take commission, or set prices &mdash; we're a media platform, not an agency.</p>
+        <div class="ship">Live across our channels</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px"><a href="#guide" class="cta-primary">Brief us on your property</a></div>
+  </div>
+</section>
+
+<!-- ===== 07 — FOUNDER STORY ===== -->
+<section class="founder" id="founder">
+  <div class="container">
+    <div class="founder-inner">
+      <div class="founder-photo">
+        <div class="founder-quote">"We started filming because every Thailand property listing online was a static photo gallery and a phone number. The 550K-strong audience is the proof we were right to build the cinematic version."</div>
+      </div>
+      <div class="founder-text">
+        <div class="section-eyebrow">07 — The Story</div>
+        <h2>Founded 2023. <em>Filming since</em> the day after.</h2>
+        <p>Farang Homes started as a YouTube channel: cinematic walk-throughs of Thai property, narrated by a buyer-side founder who'd been through the legal process himself. Two years later, it's the most-watched independent Thailand property creator team on the internet.</p>
+        <p><strong>The brand promise hasn't changed.</strong> Honest reads, full interiors, real neighbourhood footage, and the exact things a foreign buyer needs to know — not what the listing agent wants to say. Every walk-through is filmed on the buyer's side of the camera.</p>
+        <p>If you're moving to Thailand, investing here, or thinking about retiring on this side of the planet, this is the website that won't waste your time. The catalog above is yours; the buying guide answers the rest.</p>
+        <div class="founder-stats">
+          <div><div class="founder-stat-num">2023</div><div class="founder-stat-label">Founded</div></div>
+          <div><div class="founder-stat-num">8</div><div class="founder-stat-label">Cities filmed</div></div>
+          <div><div class="founder-stat-num">1,000<span style="font-size:0.55em;color:var(--gold-bright)">+</span></div><div class="founder-stat-label">Walk-throughs</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 08 — FINAL CTA ===== -->
+<section class="final-cta" id="final-cta">
+  <div class="container final-cta-inner">
+    <div class="section-eyebrow" style="justify-content:center">08 — Pick a side door</div>
+    <h2>Three doors. <em>Pick one.</em></h2>
+    <p>Browse the walk-through library. Read the 30-page buying guide. Brief us on a property you want featured. The website does no other work — and that's the point.</p>
+    <div class="final-cta-row">
+      <a href="#walkthroughs" class="cta-ghost"><span class="play"></span>Watch walk-throughs</a>
+      <a href="#guide" class="cta-primary">Get the buying guide</a>
+      <a href="#how" class="cta-ghost">Feature your property</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">FARANG<span class="gold">·</span>HOMES</div>
+        <p>The most-watched independent Thailand property creator team. Walk-throughs, drone tours, buyer guides. Not a real estate agency &mdash; we don't handle sales or set property prices.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Watch</h4>
+        <ul>
+          <li><a href="#walkthroughs">Latest walk-throughs</a></li>
+          <li><a href="#cities">By city</a></li>
+          <li><a href="https://www.youtube.com/@faranghomes">YouTube channel</a></li>
+          <li><a href="https://www.instagram.com/faranghomes/">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Buyers</h4>
+        <ul>
+          <li><a href="#guide">Buying guide eBook</a></li>
+          <li><a href="#cities">Eight Thai cities</a></li>
+          <li><a href="#who">Who we publish for</a></li>
+          <li><a href="#founder">The story</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Owners</h4>
+        <ul>
+          <li><a href="#how">Feature your property</a></li>
+          <li><a href="#how">How we film</a></li>
+          <li><a href="mailto:info@faranghomes.com">Email us</a></li>
+          <li><a href="#how">Distribution channels</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Farang Homes &middot; Bangkok &middot; Phuket &middot; Hua Hin</div>
+      <div class="social">
+        <a href="https://www.youtube.com/@faranghomes">YouTube</a>
+        <a href="https://www.instagram.com/faranghomes/">Instagram</a>
+        <a href="https://www.tiktok.com/@faranghomes">TikTok</a>
+        <a href="https://www.threads.com/@faranghomes">Threads</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
