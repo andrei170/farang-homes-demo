@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farang Homes &middot; Before vs After &middot; AG1 Consulting</title>
+<meta name="description" content="300K Instagram. 16M YouTube views. Zero AI search recommendations for Thailand foreign-buyer queries. Audit + 90-day plan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ocean: #0a1830;
+  --ocean-deep: #050d1c;
+  --ocean-elev: #0f2240;
+  --teal: #00bfa5;
+  --teal-bright: #3ddec5;
+  --gold: #d4af6c;
+  --gold-bright: #ecc88a;
+  --sand: #e6cba0;
+  --cream: #f7f0e3;
+  --line: rgba(212, 175, 108, 0.18);
+  --red-x: #d96363;
+  --green: #5cb85c;
+  --display: 'Bebas Neue', Inter, sans-serif;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--ocean-deep); color: var(--cream); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--teal-bright); text-decoration: none; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+.hero { padding: 120px 0 80px; text-align: center; position: relative; }
+.hero::before { content: ''; position: absolute; top: 5%; left: 50%; transform: translateX(-50%); width: 900px; height: 600px; background: radial-gradient(ellipse, rgba(0, 191, 165, 0.18), transparent 65%); filter: blur(80px); pointer-events: none; }
+.eyebrow { font-family: var(--display); font-size: 14px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: block; position: relative; z-index: 2; }
+.hero h1 { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: clamp(48px, 7vw, 96px); line-height: 1; letter-spacing: -0.015em; max-width: 1080px; margin: 0 auto 32px; position: relative; z-index: 2; color: var(--cream); }
+.hero h1 em { font-style: italic; color: var(--gold); }
+.hero p { color: rgba(247, 240, 227, 0.78); font-size: 18px; max-width: 720px; margin: 0 auto; line-height: 1.6; position: relative; z-index: 2; }
+
+.section { padding: 80px 0; position: relative; }
+.section.alt { background: var(--ocean); }
+.section-title { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: clamp(32px, 4vw, 56px); letter-spacing: -0.015em; line-height: 1.05; margin-bottom: 16px; color: var(--cream); }
+.section-title em { font-style: italic; color: var(--gold); }
+.section-sub { color: rgba(247, 240, 227, 0.72); font-size: 17px; margin-bottom: 56px; max-width: 720px; line-height: 1.6; }
+
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.compare-card { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--ocean-elev); transition: all 0.3s; }
+.compare-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.compare-label { padding: 16px 24px; font-family: var(--display); font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; }
+.compare-label.current { background: rgba(217, 99, 99, 0.10); color: var(--red-x); border-bottom: 1px solid rgba(217, 99, 99, 0.3); }
+.compare-label.new { background: rgba(212, 175, 108, 0.12); color: var(--gold); border-bottom: 1px solid var(--line); }
+.compare-preview { aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; }
+.compare-preview-content h3 { font-family: var(--serif); font-style: italic; font-size: 32px; font-weight: 500; }
+.compare-preview-content p { font-size: 14px; margin-top: 12px; }
+.compare-preview.current-bg { background: linear-gradient(135deg, var(--ocean-deep), var(--ocean-elev)); }
+.compare-preview.current-bg h3 { color: var(--cream); }
+.compare-preview.current-bg p { color: var(--sand); }
+.compare-preview.new-bg { background: linear-gradient(135deg, var(--teal), var(--ocean-deep)); }
+.compare-preview.new-bg h3 { color: var(--cream); }
+.compare-preview.new-bg p { color: rgba(247, 240, 227, 0.85); }
+.compare-body { padding: 28px 32px; }
+.compare-body h4 { font-family: var(--serif); font-style: italic; font-size: 24px; font-weight: 500; margin-bottom: 8px; color: var(--cream); }
+.compare-body p { color: rgba(247, 240, 227, 0.72); font-size: 14px; margin-bottom: 20px; }
+.compare-body ul { list-style: none; margin-bottom: 24px; }
+.compare-body li { padding: 6px 0; font-size: 14px; color: rgba(247, 240, 227, 0.78); display: flex; align-items: flex-start; gap: 10px; }
+.compare-body li::before { font-size: 12px; margin-top: 2px; flex-shrink: 0; font-weight: 700; }
+.current li::before { content: '\2717'; color: var(--red-x); }
+.new li::before { content: '\2713'; color: var(--green); }
+.compare-cta { display: inline-flex; align-items: center; gap: 8px; padding: 12px 26px; border-radius: 1px; font-family: var(--display); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; transition: all 0.25s; }
+.cta-current { border: 1px solid rgba(217, 99, 99, 0.4); color: var(--red-x); }
+.cta-current:hover { background: rgba(217, 99, 99, 0.08); }
+.cta-new { background: var(--gold); color: var(--ocean-deep); }
+.cta-new:hover { background: var(--gold-bright); }
+
+.bombshell-section { background: var(--ocean); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.bombshell-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: center; }
+.bombshell-stat { font-family: var(--serif); font-style: italic; font-size: clamp(80px, 14vw, 200px); font-weight: 500; line-height: 1; color: var(--gold); letter-spacing: -0.02em; }
+.bombshell-stat em { font-style: italic; color: var(--teal-bright); }
+.bombshell-stat-label { font-family: var(--display); font-size: 14px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sand); margin-top: 18px; }
+.bombshell-content h2 { font-family: var(--serif); font-style: italic; font-size: clamp(32px, 4vw, 56px); font-weight: 500; line-height: 1.05; margin-bottom: 24px; color: var(--cream); }
+.bombshell-content h2 em { font-style: italic; color: var(--gold); }
+.bombshell-content p { color: rgba(247, 240, 227, 0.85); font-size: 17px; line-height: 1.7; margin-bottom: 16px; }
+.bombshell-content p strong { color: var(--cream); font-weight: 600; }
+
+.disparity-grid { display: grid; grid-template-columns: 1fr; gap: 0; margin-top: 40px; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--ocean-elev); }
+.disparity-row { display: grid; grid-template-columns: 1.5fr 1.2fr 1fr 1fr; align-items: center; padding: 22px 32px; border-bottom: 1px solid var(--line); }
+.disparity-row:last-child { border-bottom: none; }
+.disparity-row.header { background: var(--ocean-deep); font-family: var(--display); font-size: 12px; letter-spacing: 0.28em; color: var(--sand); padding: 18px 32px; }
+.disparity-row.you { background: rgba(212, 175, 108, 0.06); }
+.disparity-name { font-family: var(--serif); font-style: italic; font-size: 19px; font-weight: 500; color: var(--cream); }
+.disparity-name.you { color: var(--gold); }
+.disparity-cell { font-size: 14px; color: rgba(247, 240, 227, 0.75); }
+.disparity-cell strong { color: var(--cream); font-weight: 600; }
+
+.plan-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+.plan-card { padding: 32px; background: var(--ocean-elev); border: 1px solid var(--line); border-radius: 4px; transition: all 0.3s; }
+.plan-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.plan-num { font-family: var(--display); font-size: 14px; letter-spacing: 0.22em; color: var(--gold); margin-bottom: 16px; display: block; }
+.plan-card h4 { font-family: var(--serif); font-style: italic; font-size: 24px; font-weight: 500; line-height: 1.15; margin-bottom: 12px; color: var(--cream); }
+.plan-card p { color: rgba(247, 240, 227, 0.68); font-size: 14px; line-height: 1.6; }
+.plan-week { font-family: var(--display); font-size: 12px; letter-spacing: 0.22em; color: var(--teal); margin-top: 16px; display: inline-block; }
+
+.scorecard { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--ocean-elev); }
+.scorecard-header { display: grid; grid-template-columns: 2fr 1fr 1fr; padding: 24px 32px; background: var(--ocean-deep); border-bottom: 1px solid var(--line); font-family: var(--display); font-size: 12px; letter-spacing: 0.28em; color: var(--sand); }
+.scorecard-row { display: grid; grid-template-columns: 2fr 1fr 1fr; padding: 18px 32px; border-bottom: 1px solid var(--line); align-items: center; }
+.scorecard-row:last-child { border-bottom: none; }
+.scorecard-row:hover { background: rgba(212, 175, 108, 0.04); }
+.scorecard-label { font-size: 15px; color: var(--cream); }
+.scorecard-cell { font-size: 14px; }
+.scorecard-cell.current { color: var(--red-x); }
+.scorecard-cell.new { color: var(--green); font-weight: 600; }
+
+.cta-section { padding: 120px 0; text-align: center; }
+.cta-section h2 { font-family: var(--serif); font-style: italic; font-size: clamp(36px, 5vw, 64px); font-weight: 500; letter-spacing: -0.015em; margin-bottom: 24px; line-height: 1.05; color: var(--cream); }
+.cta-section h2 em { font-style: italic; color: var(--gold); }
+.cta-section p { color: rgba(247, 240, 227, 0.72); font-size: 17px; margin-bottom: 40px; max-width: 580px; margin-left: auto; margin-right: auto; }
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-button { display: inline-flex; align-items: center; gap: 8px; padding: 18px 40px; border-radius: 1px; font-family: var(--display); font-size: 13px; letter-spacing: 0.22em; transition: all 0.25s; }
+.cta-button.primary { background: var(--gold); color: var(--ocean-deep); }
+.cta-button.primary:hover { background: var(--gold-bright); transform: translateY(-2px); }
+.cta-button.ghost { border: 1px solid var(--line); color: var(--cream); }
+.cta-button.ghost:hover { border-color: var(--gold); }
+
+footer { padding: 32px 0; border-top: 1px solid var(--line); text-align: center; font-size: 12px; color: var(--sand); }
+footer a { color: var(--gold); }
+
+@media (max-width: 1024px) { .compare-grid { grid-template-columns: 1fr; } .bombshell-grid { grid-template-columns: 1fr; gap: 32px; } .plan-grid { grid-template-columns: 1fr 1fr; } .disparity-row { grid-template-columns: 1fr 1fr; gap: 12px; padding: 16px 20px; } .disparity-row.header { display: none; } .disparity-cell::before { content: attr(data-label) ': '; color: var(--sand); font-family: var(--display); font-size: 11px; letter-spacing: 0.22em; margin-right: 6px; } }
+@media (max-width: 720px) { .plan-grid { grid-template-columns: 1fr; } .disparity-row { grid-template-columns: 1fr; gap: 6px; } }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Prepared for Farang Homes &middot; AG1 Consulting</span>
+    <h1>300K Instagram. 16M YouTube views.<br>AI search has <em>never heard</em> of you.</h1>
+    <p>What faranghomes.com looks like to a foreign buyer Googling "buy property in Thailand as a foreigner" tonight versus what 90 days of schema, city-guide pages, and citation campaign could deliver. The audience and content catalog are the largest in the category. The structured data layer is empty.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Farang Homes: <em>before vs after</em></h2>
+    <p class="section-sub">Same 300K IG audience. Same 16M YouTube views. Same eight-city Thailand cinematic catalog. Two very different chances of being recommended when a foreign buyer asks ChatGPT for a Thailand property authority tonight.</p>
+    <div class="compare-grid">
+      <div class="compare-card">
+        <div class="compare-label current">Today &middot; Live Site</div>
+        <div class="compare-preview current-bg"><div class="compare-preview-content"><h3>faranghomes.com</h3><p>Currently live &middot; Click to view</p></div></div>
+        <div class="compare-body current">
+          <h4>What's there now</h4>
+          <p>The audience and content catalog are exceptional. The website carries almost none of that equity into Google's structured data or AI search citation surfaces.</p>
+          <ul>
+            <li>0 of 4 AI engine recommendations across foreign-buyer Thailand property queries</li>
+            <li>No city-guide pages indexed for the 8 named cities (each is a separate keyword universe)</li>
+            <li>No VideoObject schema linking the YouTube catalog to the website</li>
+            <li>No RealEstateAgent or Organization schema with audience-size signals</li>
+            <li>No FAQ schema (AI engines have nothing to lift verbatim)</li>
+            <li>Missing from OwnPropertyAbroad, Investments For Expats, ExpatDen, GlobalPropertyGuide, Asia Pacific Property Awards</li>
+            <li>CBRE Thailand, Knight Frank, FazWaz, RE/MAX, Keller Henson dominate the AI Overview</li>
+          </ul>
+          <a href="https://faranghomes.com/" target="_blank" rel="noopener" class="compare-cta cta-current">View Live Site &rarr;</a>
+        </div>
+      </div>
+      <div class="compare-card">
+        <div class="compare-label new">Proposed &middot; Authority Build</div>
+        <div class="compare-preview new-bg"><div class="compare-preview-content"><h3>The Thailand authority</h3><p>Click to explore the demo &rarr;</p></div></div>
+        <div class="compare-body new">
+          <h4>What we'd ship</h4>
+          <p>A schema-and-citation rebuild that converts 16M YouTube views into structured authority signals AI engines can read, plus 8 city-guide pages indexed for the queries foreign buyers actually type.</p>
+          <ul>
+            <li>Full Organization + RealEstateAgent + Person + VideoObject + FAQ schema</li>
+            <li>8 city-guide pages with embedded cinematic walkthroughs (Bangkok, Phuket, Pattaya, Chiang Mai, Koh Samui, Hua Hin + 2)</li>
+            <li>Foreign-buyer headline page: /buy-property-thailand-foreigner-guide</li>
+            <li>Buyer's Guide PDF as primary lead-magnet (foreign ownership rules + 8-city comparison)</li>
+            <li>Citation campaign: OwnPropertyAbroad, Investments For Expats, ExpatDen, GlobalPropertyGuide</li>
+            <li>Asia Pacific Property Awards submission + Wikipedia / Wikidata entity</li>
+            <li>Performance gate: 2 of 4 AI engine mentions by day 90, or work continues</li>
+          </ul>
+          <a href="../" class="compare-cta cta-new">Open the Demo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bombshell-section">
+  <div class="container">
+    <div class="bombshell-grid">
+      <div>
+        <div class="bombshell-stat">16M</div>
+        <div class="bombshell-stat-label">YouTube views &middot; 0 AI search citations</div>
+      </div>
+      <div class="bombshell-content">
+        <h2>The audience exists. The <em>citation density</em> doesn't.</h2>
+        <p>Farang Homes has 16 million YouTube views and 300,000 Instagram followers. Both of those numbers are the largest in the Thailand-property-creator category by a meaningful multiple.</p>
+        <p>None of that surfaces in Google's structured data layer. <strong>YouTube view counts are not in Person schema.</strong> Cinematic walkthroughs are not in VideoObject schema connected to the website. The city-guide content is in YouTube videos, not schema-marked City pages indexed for the queries foreign buyers type. AI engines that decide who to cite for "best Thailand real estate authority" cannot see any of it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Side by side with the cited <em>competitors.</em></h2>
+    <p class="section-sub">The audience disparity is the entire story. Farang has more reach, deeper content, and stronger creator credibility than every cited Thailand-property agency. The infrastructure gap is what stops the moat from showing up in AI search.</p>
+    <div class="disparity-grid">
+      <div class="disparity-row header">
+        <div>Agency / Creator</div>
+        <div>Audience</div>
+        <div>Content Catalog</div>
+        <div>AI Recommend</div>
+      </div>
+      <div class="disparity-row you">
+        <div class="disparity-name you">Farang Homes</div>
+        <div class="disparity-cell" data-label="Audience"><strong>300K IG + 16M YT</strong></div>
+        <div class="disparity-cell" data-label="Content"><strong>Cinematic, 8 cities</strong></div>
+        <div class="disparity-cell" data-label="AI"><strong>0 of 4</strong></div>
+      </div>
+      <div class="disparity-row">
+        <div class="disparity-name">CBRE Thailand</div>
+        <div class="disparity-cell" data-label="Audience">Limited</div>
+        <div class="disparity-cell" data-label="Content">Listings + reports</div>
+        <div class="disparity-cell" data-label="AI">4 of 4</div>
+      </div>
+      <div class="disparity-row">
+        <div class="disparity-name">Knight Frank Thailand</div>
+        <div class="disparity-cell" data-label="Audience">Limited</div>
+        <div class="disparity-cell" data-label="Content">Listings + reports</div>
+        <div class="disparity-cell" data-label="AI">4 of 4</div>
+      </div>
+      <div class="disparity-row">
+        <div class="disparity-name">FazWaz</div>
+        <div class="disparity-cell" data-label="Audience">Limited</div>
+        <div class="disparity-cell" data-label="Content">Listings platform</div>
+        <div class="disparity-cell" data-label="AI">4 of 4</div>
+      </div>
+      <div class="disparity-row">
+        <div class="disparity-name">Keller Henson</div>
+        <div class="disparity-cell" data-label="Audience">Limited</div>
+        <div class="disparity-cell" data-label="Content">Single office</div>
+        <div class="disparity-cell" data-label="AI">3 of 4</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2 class="section-title">The <em>90-day</em> plan.</h2>
+    <p class="section-sub">Four phases. By day 90, Farang Homes is a named recommendation in 3 of 4 AI search queries, with at least 5 placements on Thailand-property authority lists and the 16M YouTube view count surfaced as structured authority.</p>
+    <div class="plan-grid">
+      <div class="plan-card"><span class="plan-num">PHASE 01</span><h4>Foundation</h4><p>Organization + RealEstateAgent + Person + VideoObject + FAQ schema. sameAs entity unification. Wikipedia / Wikidata draft. Search Console + Bing wiring.</p><span class="plan-week">Weeks 1&ndash;2</span></div>
+      <div class="plan-card"><span class="plan-num">PHASE 02</span><h4>City + Guide Pages</h4><p>8 city-guide pages with embedded walkthroughs. Headline /buy-property-thailand-foreigner-guide page. Buyer's Guide PDF lead-magnet built.</p><span class="plan-week">Weeks 2&ndash;6</span></div>
+      <div class="plan-card"><span class="plan-num">PHASE 03</span><h4>Citation Campaign</h4><p>OwnPropertyAbroad, Investments For Expats, ExpatDen, GlobalPropertyGuide, Asia Pacific Property Awards. 10-creator YouTube cross-pollination + 15-podcast sequence.</p><span class="plan-week">Weeks 3&ndash;10</span></div>
+      <div class="plan-card"><span class="plan-num">PHASE 04</span><h4>Lead-Capture Flywheel</h4><p>Buyer's Guide nurture flow for the 6-18 month decision cycle. WhatsApp / Line direct integration. Monthly performance dashboard.</p><span class="plan-week">Weeks 6&ndash;12</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">The <em>scorecard.</em></h2>
+    <p class="section-sub">Every signal AI search engines check, the current faranghomes.com graded against the 90-day rebuild.</p>
+    <div class="scorecard">
+      <div class="scorecard-header"><div>Signal</div><div>Today</div><div>After plan</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Organization + RealEstateAgent schema</div><div class="scorecard-cell current">Light</div><div class="scorecard-cell new">&check; Full</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">VideoObject schema (catalog)</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Live</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">FAQPage schema</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; 8+ Q&amp;As</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">City-guide pages (8 cities)</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">8 dedicated</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Buyer's Guide lead-magnet</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Live</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Wikipedia / Wikidata entity</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Live</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">OwnPropertyAbroad / Investments For Expats inclusion</div><div class="scorecard-cell current">&times; Missing</div><div class="scorecard-cell new">Featured target</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Asia Pacific Property Awards</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">Submitted</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">AI engine recommendation rate</div><div class="scorecard-cell current">0 of 4</div><div class="scorecard-cell new">3 of 4 target</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Audience-as-authority signal in schema</div><div class="scorecard-cell current">&times; Buried</div><div class="scorecard-cell new">&check; Surfaced</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Authority tier</div><div class="scorecard-cell current">Brand-only</div><div class="scorecard-cell new">Brand + Search</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>The foreign buyer Googling Thailand<br>property <em>tonight</em> can't find you.</h2>
+    <p>Right now, ChatGPT is sending them to CBRE Thailand. Ninety days from now, that changes.</p>
+    <div class="cta-buttons">
+      <a href="mailto:info@andreicopy.net" class="cta-button primary">Book the Strategy Call &rarr;</a>
+      <a href="../" class="cta-button ghost">Open the Demo &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>AG1 Consulting &middot; Andrei Givero &middot; info@andreicopy.net &middot; <a href="https://andrei170.github.io/ag1/">andrei170.github.io/ag1</a></span>
+</footer>
+</body>
+</html>
